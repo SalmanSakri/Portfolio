@@ -1,0 +1,98 @@
+.skil {
+    margin: 0 auto;
+    padding: 150px;
+    background-color: var(--shadow);
+}
+
+.skilNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    /* font-size: clamp(2rem,5vw,2rem); */
+    font-size: clamp(2.6rem, 5vw, 32px);
+    white-space: nowrap;
+}
+
+.skilNumber::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-left: 20px;
+    background-color: var(--main-color2);
+}
+
+.skillHone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    /* font-size: clamp(2rem,5vw,2rem); */
+    font-size: clamp(2.6rem, 5vw, 32px);
+    white-space: nowrap;
+}
+
+.skillHone h3 {
+    color: var(--main-color);
+}
+
+.skillHone strong {
+    color: var(--main-color2);
+}
+
+.skilList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.skilitem {
+    font-size: clamp(4rem, 10vw, 9rem);
+    margin: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+    border: 1.7px solid var(--main-color) !important;
+    /* border: 1.7px solid rgba(200, 137, 230, .637) !important; */
+    border-radius: 5px !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, .137) !important;
+    margin: 15px !important;
+    opacity: .93 !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+    transition: all .4s ease 0s !important;
+    vertical-align: middle !important;
+}
+
+.skilitem:hover {
+    border: 1.7px solid var(--main-color2) !important;
+    box-shadow: 4px 5px 4px 3px rgba(4, 149, 168, 0.137) !important;
+    transform: scale(1.05) !important;
+}
+
+.skilitem span {
+    font-size: clamp(2rem, 2vw, 2rem);
+    /* color: var(--main-color2); */
+}
+
+.AnimationOnScroll {
+    transition: all 0.5s ease;
+}
+
+@media (max-width:786px) {
+    .skil {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,59 @@
+:root {
+    --main-background: #0b0c10;
+    --text-color: #e1e3ea;
+    --main-color: #66f6f1; 
+    --main-color2: #cb2def;
+    --shadow:#1b2323;
+    /* --main-color2:rgba(200, 137, 230, .637) ; */
+}
+
+/* 1rem=16px,1px=6.25%, 62.5% */
+
+.light-theme {
+    background-color: unset;
+}
+
+.dark-theme {
+    background: var(--main-background);
+    color: var(--text-color); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif,"Montserrat";
+    overflow-x: hidden;
+}
+
+html {
+    background-image: radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,.3),transparent);
+    font-size: 62.5%;
+    /* means 1rem=10px */
+    scroll-behavior: smooth;
+}
+
+.numberCount::before {
+    counter-increment: section 1;
+    margin-right: 1.2rem;
+    color: var(--main-color2);
+    font-weight: 400;
+}
+
+.about,.header,.FrequentlyAsked,.project,.skil{
+    padding: 30px;
+}
+/* Scrooling animation section start */
+
+/* @media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+} */

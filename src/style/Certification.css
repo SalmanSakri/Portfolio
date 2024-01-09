@@ -1,0 +1,23 @@
+.card-style{
+    height: 200px;
+    width: 200px;
+    padding-top: 80px;
+    text-align: center;
+    background:#52C0F5;
+    color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+    border-radius: 12px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    
+}
+.container-style{
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}

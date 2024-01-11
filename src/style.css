@@ -23,17 +23,17 @@
     padding: 0;
     box-sizing: border-box;
     /* text-transform: capitalize; */
-    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif,"Montserrat";
+    font-family: 'Segoe UI', sans-serif,"Montserrat";
     overflow-x: hidden;
 }
 
 html {
-    background-image: radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,.3),transparent);
+    /* background-image: radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,.3),transparent); */
     font-size: 62.5%;
     /* means 1rem=10px */
     scroll-behavior: smooth;
 }
-
+/* , 'Roboto', '', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
 .numberCount::before {
     counter-increment: section 1;
     margin-right: 1.2rem;

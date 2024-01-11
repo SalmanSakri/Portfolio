@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, {lazy, useState } from 'react'
 import '../style/Countup.css';
-import CountUp from 'react-countup';
+// import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 import { DiCodeigniter } from "react-icons/di";
+
+const CountUp= lazy(()=>import('react-countup'));
+
 const Countup = () => {
     const [CounterOn, setCounterOn] = useState(false);
     return (

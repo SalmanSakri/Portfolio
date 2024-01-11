@@ -20,7 +20,7 @@ const About = () => {
         <div className="PhotoDataContainer">
           <div className="photoDataInf">
             <motion.div className="right"
-              initial={{ opacity: 0.2, scale: 0, y: 0 }}
+              initial={{ opacity: 0.2, scale: 0, y: 0 }} 
               whileInView={{ opacity: 1, scale: 1, x: -0 }}
               transition={{ duration: 0.6 }}
 
@@ -29,11 +29,11 @@ const About = () => {
               <div className='about-experience'>
                 <article className="about-experience-list">
                   <span className='about-logo'><GrCertificate /></span>
-                  <h5>Experience</h5><small>Freasher</small>
+                  <h4>Experience</h4><small>Freasher</small>
                 </article>
                 <article className="about-experience-list">
                   <span className='about-logo'><AiOutlineBook /></span>
-                  <h5>Projects</h5><small>1+ Project</small>
+                  <h4>Projects</h4><small>1+ Project</small>
                 </article>
               </div>
             </motion.div>

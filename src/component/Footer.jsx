@@ -2,8 +2,11 @@ import React from 'react'
 import Iframe from 'react-iframe'
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { motion } from 'framer-motion';
 import "../style/Footer.css"
+
+import { motion } from 'framer-motion';
+// const motion=lazy(()=>import('framer-motion'))
+
 const Footer = () => {
   return (
     <>
@@ -21,13 +24,13 @@ const Footer = () => {
 
             <div className='footer-card-item'>
 
-              <a href='https://wa.me/9920989486' target='_blank' rel='noopener noreferrer'>
+              <a href='https://wa.me/9920989486' target='_blank' rel='noopener noreferrer' aria-label="Whatsapp" >
                 <FaWhatsapp />
               </a>
-              <a href='mailto:salmansakri11@gmail.com' target='_blank' rel='noopener noreferrer'>
+              <a href='mailto:salmansakri11@gmail.com' target='_blank' rel='noopener noreferrer' aria-label="Gmail" >
                 <MdOutlineMailOutline />
               </a>
-              <a href='https://www.instagram.com/itzz_sal_lu/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.instagram.com/itzz_sal_lu/' target='_blank' rel='noopener noreferrer' aria-label="Instagram" >
                 <FaInstagram />
               </a>
             </div>
@@ -39,6 +42,7 @@ const Footer = () => {
         <section>
           <div className='footer-video'>
             <Iframe src="https://giphy.com/embed/wvWGKeTUgz1rrrWq27"
+            title="see you soon"
               width="140px"
               height="120px"
               id=""

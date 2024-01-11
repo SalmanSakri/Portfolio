@@ -1,12 +1,16 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-import HeaderPhoto from "../img/salmansakriLogo.png";
-// import { Link } from 'react-router-dom';
+
 import { HashLink as Link } from 'react-router-hash-link';
 import "../style/Biodata.css"
+import HeaderPhoto from "../img/salmansakriLogo.png";
 
+
+
+import { TypeAnimation } from 'react-type-animation';
+
+// const Biodata= lazy(()=>import("./component/Biodata"));
 // import Pertical from "../component/Pertical"
 
 const Biodata = ({ isNavOpen  }) => {
@@ -17,11 +21,11 @@ const Biodata = ({ isNavOpen  }) => {
       <header className={`header ${isNavOpen ?'active' : ''}`}>
         <div className='header-Container'>
           <div className='headerphoto'>
-            <img src={HeaderPhoto} alt="" />
+            <img src={HeaderPhoto} alt="Salman Sakri - Web Developer" rel="preload" width={"250px"} height={""}/>
           </div>
           <div className='header-text-container'>
             <div className="nameBio">
-              <h3>Hi, My Name Is</h3>
+              <h2>Hi, My Name Is</h2>
             </div>
             <div className="nameBio2">
               <h1>Salman Sakri</h1>
@@ -61,7 +65,7 @@ const Biodata = ({ isNavOpen  }) => {
   
         >
          <div className='header-button'>
-            <Link href="" to="#contact"><button className='header-button1'>let's Talk</button></Link>
+            <Link href="" to="#contact" ><button className='header-button1'>let's Talk</button></Link>
             <Link href=""  to="#project"><button className='header-button2'>My Work</button></Link>
           </div>
         </motion.div>

@@ -32,7 +32,7 @@ const FrequentlyAsked = () => {
                     {faqData.map((item, index) => (
                         <li key={index} className={"faq-item"}>
                             <div className="faq-question" onClick={() => handleToggle(index)}>
-                                <h5>{item.question}</h5>
+                                <p>{item.question}</p>
                                <span className='faq-question-logo'>{activeIndex === index ?<CgMathMinus />: <GoPlus />}</span>
                             </div>
                             {activeIndex === index && 

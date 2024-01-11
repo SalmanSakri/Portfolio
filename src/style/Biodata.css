@@ -1,82 +1,72 @@
-.header{
-  margin: 0px auto;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px 0;
+.header {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0;
 }
-/* .header {
-    transition: filter 0.3s ease;
-  }
-  
-  .active {
-    filter: blur(5px); /* Adjust the blur intensity as needed */
-  /* } */
-.header-Container{
-    /* display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative; */
 
+.header-Container {
     display: flex;
 }
-.headerphoto img{
-    width: 400px;
+
+.headerphoto img {
+    border-radius: 167px;
 }
-.header-text-container{
+
+.header-text-container {
     margin-top: 50px;
+    margin-left: 48px;
 }
-.nameBio{
-    /* position: absolute; */
-}  
-.nameBio2{
+
+.nameBio2 {
     position: absolute;
     margin-top: 4px;
     margin-left: 12px;
 }
-.nameBio h3{
+
+.nameBio h2 {
     font-size: clamp(2rem, 2vw, 20px);
 }
-.name h1{
+
+.name h1 {
     font-size: clamp(4.5rem, 7vw, 75px);
 }
-.Text-container{
+
+.Text-container {
+    margin-top: 66px;
+}
+
+
+.nameBio h2,
+.name {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
     position: absolute;
 }
-.Text-container .Text{
 
+.Text-container .Text {
     position: relative;
     padding-left: 12px;
 }
- .frist-text{
-font-size: clamp(4rem, 5vw, 75px);
+
+.frist-text {
+    font-size: clamp(4rem, 5vw, 75px);
 }
 
-.second-text{
-color: #66f6f1;
-font-size: clamp(4rem, 5vw, 75px); 
+.second-text {
+    color: #66f6f1;
+    font-size: clamp(4rem, 5vw, 75px);
 }
 
-/* img{
-    height: auto;
-    min-width: 23rem;
-    justify-content: center;
-    width: 60%;
-} */
-.nameBio h3,
-    .name,
-    .Text-container {
-        padding: 8px;
-        display: flex;
-        justify-content: center;
-        margin-top: 28px
-    }
-.header-text-list-container{
+.header-text-list-container {
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
 }
-.header-paregraph{
+
+.header-paregraph {
     color: #8e8ea7;
     width: 100%;
     margin: 0.6rem 0 2rem;
@@ -84,85 +74,88 @@ font-size: clamp(4rem, 5vw, 75px);
     font-size: 2rem;
     line-height: 28px;
 }
-.header-button{
+
+.header-button {
     margin: 0 auto;
 }
-.header-button1{
+
+.header-button1,
+.header-button2 {
     padding: 16px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    margin: 12px;
+    transition: all 0.5s ease;
+}
+
+.header-button1 {
     background-color: #66f6f1;
-    border: 2px solid transparent;
-    border-radius: 16px;
-    margin: 12px;
-    transition: all .5s ease;
-   
 }
-.header-button2{
-    padding: 16px;
-    border: 2px solid transparent;
-    border-radius: 16px;
-    margin: 12px;
-    background-color:  hsl( 240 ,5%, 12% );
-    transition: all .5s ease;
+
+.header-button2 {
+    background-color: hsl(240, 5%, 12%);
     color: white;
 }
-.header-button1:hover{
+
+.header-button1:hover,
+.header-button2:hover {
     background-color: initial;
-    border-color:var( --main-color2);
-    color: white;
-    /* -webkit-transform: translateY(-0.5rem); */
-    transform: translateY(-1rem);
-}
-.header-button2:hover{
-    background-color: initial;
-    border-color:var( --main-color2);
+    border-color: var(--main-color2);
     color: white;
     transform: translateY(-1rem);
 }
-@media (max-width:768px){
-    .header{
+
+@media (max-width: 768px) {
+    .header {
         padding: 0;
     }
-    .header-Container{
+
+    .header-Container {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        /* align-items: flex-start; */
         position: relative;
     }
+
     .header-text-container {
         margin-top: 0px;
     }
+
     .nameBio2 {
         position: relative;
         display: flex;
         justify-content: center;
     }
+
     .header-text-list-container {
         text-align: center;
         margin-left: 60px;
         margin-right: 50px;
     }
-    .Text-container .Text{
+
+    .Text-container .Text {
         margin-top: 0px;
         font-size: 3.5rem;
     }
-    .headerphoto{
+
+    .headerphoto {
         margin: 0 auto;
     }
-    .headerphoto img{
+
+    .headerphoto img {
         width: 200px;
         height: 200px;
     }
-    .bio{
-        padding: 28px   47px;
+
+    .bio {
+        padding: 28px 47px;
     }
-    .nameBio h3,
+
+    .nameBio h2,
     .name,
     .Text-container {
-        padding: 8px;
-        display: flex;
-        justify-content: center;
         position: relative;
         margin-top: 0px;
+        text-align: center;
     }
-} 
+}

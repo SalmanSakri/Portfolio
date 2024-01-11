@@ -25,9 +25,9 @@ font-size: 3.5rem;
     display: flex;
     gap: 7rem;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.5rem; 
   }
-  .faq-question h5{
+  .faq-question p{
     font-size: 1.6rem;
   }
   .faq-question span{

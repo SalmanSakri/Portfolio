@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+const Particles= lazy(()=>import("react-tsparticles"));
 
 
+
+// const Biodata= lazy(()=>import("./component/Biodata"));
+
+// import Particles from "react-tsparticles";
 const Pertical = () => {
 
   const particlesInit = useCallback(async engine => {

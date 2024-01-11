@@ -1,31 +1,53 @@
 import "./style.css"
-import React from 'react'
+import React ,{ lazy,Suspense} from 'react'
 import Navbar from './component/Navbar';
-import Footer from "./component/Footer";
-// import Pertical from "./component/Pertical";
+ 
+
 import Biodata from "./component/Biodata";
-import About from "./component/About.jsx";
-import Skil from './component/Skil';
-import Project from './component/Project';
-import CountUp from './component/Countup'
-import FrequentlyAsked from "./component/FrequentlyAsked.jsx"
-import { BrowserRouter } from 'react-router-dom'
+
+import { BrowserRouter } from 'react-router-dom';
+
+const Pertical= lazy(()=>import("./component/Pertical"));
+const About= lazy(()=>import("./component/About.jsx"));
+const FrequentlyAsked= lazy(()=>import("./component/FrequentlyAsked.jsx"));
+const Project =lazy (()=> import ('./component/Project'));
+const CountUp = lazy(()=> import ('./component/Countup'));
+const Skil= lazy(()=>import('./component/Skil'));
+const Footer= lazy(()=>import("./component/Footer"));
+// const Biodata= lazy(()=>import("./component/Biodata"));
+
+// import Pertical from "./component/Pertical";
+// import Footer from "./component/Footer";
+// import About from "./component/About.jsx";
+// import FrequentlyAsked from "./component/FrequentlyAsked.jsx"
+// import Project from './component/Project';
+// import CountUp from './component/Countup';
+// import Skil from './component/Skil';
 // import Certification from "./component/Certification"
 
 function App() { 
   return (
     <>
       <BrowserRouter>
-        {/* <Pertical/> */}
+      
         <Navbar />
         <Biodata />
+     
+
+        <Suspense fallback={<p>Loading...</p>}>
+        <Pertical/>
+      
         <About />
         <Project />
         <CountUp />
-        {/* <Certification/> */}
         <Skil />
         <FrequentlyAsked />
         <Footer />
+        </Suspense>
+       
+        {/* <Certification/> */}
+      
+   
       </BrowserRouter>
     </>
   );

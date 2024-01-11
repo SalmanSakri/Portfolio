@@ -6,9 +6,7 @@ const Project = () => {
   const projectData = [
     {
       title: "Survey Form",
-      description: `Designed and developed a user-friendly and visually appealing survey form for collecting valuable feedback and data. 
-      Implemented responsive web design principles to ensure the survey form works seamlessly across various
-      devices and screen sizes. `,
+      description: `Designed and developed a user-friendly and visually appealing survey form for collecting valuable feedback and data. `,
       imageUrl: "https://global.discourse-cdn.com/freecodecamp/optimized/4X/d/1/b/d1be47e75bf643f77b46e6f21fc3026c83f68232_2_474x500.jpeg",
       githubLink: "",
       liveDemoLink: "https://survey-form-git-master-salmansakri.vercel.app/"
@@ -31,21 +29,21 @@ const Project = () => {
     },
     {
       title: "Quiz App",
-      description: "A brief description of the project Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam iure, odio culpa, numquam, voluptatibus facere itaque ullam quod asperiores atque minus dolores fugiat minima dolorem.",
+      description: "",
       imageUrl: "	https://file.forms.app/sitefile/how-to-create-an-online-quiz-with-formsapp-cover.jpg",
       githubLink: "https://github.com/your-username/your-repo",
       liveDemoLink: "https://quizepp.netlify.app/"
     },
   ];
 
-  return (
+  return ( 
 
     <section className='project' id='project'> 
       <h2 className='ProjectMe numberCount'>Projects</h2>
       <div className='project-container'>
         {projectData.map((item, index) => (
           <div className="project-card" key={index}>
-            <img src={item.imageUrl} alt="" className="project-image" />
+            <img src={item.imageUrl} alt="" className="project-image" height={"180px"} width={"100%"} />
             <div className="project-details">
               <h3 className="project-title">{item.title}</h3>
               <p className="project-description">{item.description}</p>

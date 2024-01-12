@@ -25,7 +25,7 @@ const Footer= lazy(()=>import("./component/Footer"));
 // import Skil from './component/Skil';
 // import Certification from "./component/Certification"
 
-function App() { 
+function App() {  
   return (
     <>
       <BrowserRouter>

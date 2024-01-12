@@ -78,7 +78,7 @@
       width: 100%;
       z-index: 1;
       background-color: var(--shadow);
-      top: 80px; /* Adjust the top value according to your design */
+      top: 70px; /* Adjust the top value according to your design */
       left: 0;
       opacity: 0;
       pointer-events: none;

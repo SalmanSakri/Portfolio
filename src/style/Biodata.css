@@ -11,6 +11,7 @@
 
 .headerphoto img {
     border-radius: 167px;
+    margin-left: 36px;
 }
 
 .header-text-container {
@@ -135,7 +136,7 @@
 
     .Text-container .Text {
         margin-top: 0px;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .headerphoto {
@@ -155,7 +156,7 @@
     .name,
     .Text-container {
         position: relative;
-        margin-top: 0px;
+        margin-top: 16px;
         text-align: center;
     }
 }

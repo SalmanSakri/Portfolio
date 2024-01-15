@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { HashLink as Link } from 'react-router-hash-link';
 import "../style/Biodata.css"
-import HeaderPhoto from "../img/salmansakriLogo.png";
+import HeaderPhoto from "../img/salmansakriLogo.webp";
 
 
 

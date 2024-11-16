@@ -29,19 +29,18 @@ const About = () => {
               <div className='about-experience'>
                 <article className="about-experience-list">
                   <span className='about-logo'><GrCertificate /></span>
-                  <h4>Experience</h4><small>Freasher</small>
+                  <h4>Experience</h4><small>Fresher</small>
                 </article>
                 <article className="about-experience-list">
                   <span className='about-logo'><AiOutlineBook /></span>
-                  <h4>Projects</h4><small>1+ Project</small>
+                  <h4>Projects</h4><small>4+ Project</small>
                 </article>
               </div>
             </motion.div>
-            <p className='photoDataText'> React.Js developer with a strong background in front-end development. A quick learner who is perpetually
- passionate about embracing new technologies and expanding skill sets.
+            <p className='photoDataText'> I am Salman Sakri, a dedicated self-learner with a strong background in front-end development. As a React.js enthusiast, I thrive on pushing the boundaries of web design and functionality.
             </p>
 
-            <p className='photoDataText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sapiente obcaecati molestias eveniet, cumque quidem ad architecto distinctio optio fuga, sint a beatae enim corporis quae facere? Incidunt quae rerum modi consequatur amet dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p className='photoDataText'>My journey as a React.js developer is characterized by a relentless pursuit of knowledge and a knack for quickly adapting to emerging trends. As a quick learner, I am always eager to embrace new technologies.</p>
           </div>
 
           <div className='About-photo'>

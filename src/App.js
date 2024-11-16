@@ -15,23 +15,14 @@ const Project = lazy(() => import('./component/Project'));
 const CountUp = lazy(() => import('./component/Countup'));
 const Skil = lazy(() => import('./component/Skil'));
 const Footer = lazy(() => import("./component/Footer"));
-// const Biodata= lazy(()=>import("./component/Biodata"));
 
-// import Pertical from "./component/Pertical";
-// import Footer from "./component/Footer";
-// import About from "./component/About.jsx";
-// import FrequentlyAsked from "./component/FrequentlyAsked.jsx"
-// import Project from './component/Project';
-// import CountUp from './component/Countup';
-// import Skil from './component/Skil';
-// import Certification from "./component/Certification"
 
 function App() {
   const [isloading, setIsLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000)
+    }, 2000)
   })
   return (
     <>

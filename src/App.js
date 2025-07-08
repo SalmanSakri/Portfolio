@@ -26,22 +26,16 @@ function App() {
   })
   return (
     <>
-
       {isloading ?
         (<Loading />)
         :
         (
-
           <BrowserRouter>
-
-
             <Navbar />
             <Biodata />
 
-
             <Suspense fallback={<p>Loading...</p>}>
               <Pertical />
-
               <About />
               <Project />
               <CountUp />
@@ -52,14 +46,8 @@ function App() {
 
             {/* <Certification/> */}
 
-
           </BrowserRouter>
-
-
         )}
-
-
-
     </>
   );
 }

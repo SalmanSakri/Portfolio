@@ -33,7 +33,7 @@ const About = () => {
                 </article>
                 <article className="about-experience-list">
                   <span className='about-logo'><AiOutlineBook /></span>
-                  <h4>Projects</h4><small>4+ Project</small>
+                  <h4>Projects</h4><small>2+ Project</small>
                 </article>
               </div>
             </motion.div>

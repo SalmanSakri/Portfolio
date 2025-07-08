@@ -9,31 +9,16 @@ const Project = () => {
       description: `Designed and developed a user-friendly and visually appealing survey form for collecting valuable feedback and data. `,
       imageUrl: "https://global.discourse-cdn.com/freecodecamp/optimized/4X/d/1/b/d1be47e75bf643f77b46e6f21fc3026c83f68232_2_474x500.jpeg",
       githubLink: "",
-      liveDemoLink: "https://surveyy-form.vercel.app/ffffffff"
+      liveDemoLink: "https://surveyy-form.vercel.app"
     },
 
-    // {
-    //   title: "TO-DO List",
-    //   description: "Designed and developed a fully functional ToDo List application using React JS",
-    //   imageUrl: "https://res.cloudinary.com/practicaldev/image/fetch/s--mAEj9aTD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9lpc5065tedctt6lh3fx.jpg",
-    //   githubLink: "https://github.com/your-username/your-repo",
-    //   liveDemoLink: "https://fluffy-swan-51beb8.netlify.app/"
-    // },
-    // {
-    //   title: "Crud Operation",
-    //   description:`The primary purpose of this app is to manage employee data. Users can perform CRUD
-    //   operations on employee records.`,
-    //   imageUrl: "https://www.codestoresolutions.com/wp-content/uploads/2023/08/crud.webp",
-    //   githubLink: "https://github.com/your-username/your-repo",
-    //   liveDemoLink: "https://salmancrud.vercel.app/"
-    // },
-    // {
-    //   title: "Quiz App",
-    //   description: "",
-    //   imageUrl: "	https://file.forms.app/sitefile/how-to-create-an-online-quiz-with-formsapp-cover.jpg",
-    //   githubLink: "https://github.com/your-username/your-repo",
-    //   liveDemoLink: "https://quizepp.netlify.app/"
-    // },
+    {
+      title: "Meet App",
+      description: "Built secure application with JWT authentication. Created OTP-based email authentication flow with Nodemailer. Implemented CRUD operations for meeting scheduling with MERN Stack.",
+      imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      githubLink: "https://github.com/SalmanSakri/Auth-Banckend",
+      liveDemoLink: "https://meet-in-the-middle-app.netlify.app"
+    },
   ];
 
   return (
